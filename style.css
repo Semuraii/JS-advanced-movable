@@ -29,3 +29,11 @@ h1 {
     border-radius: 50%;
     position: absolute;
 }
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
