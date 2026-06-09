@@ -1,3 +1,4 @@
 const ball = document.getElementById('ball');
-console.log(ball);
+const container = document.getElementById('container');
+console.log(container);
 
