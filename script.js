@@ -28,3 +28,9 @@ document.getElementById("right").addEventListener("click", () => {
     moveBall(speed, 0);
 });
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowUp") {
+        moveBall(0, -speed);
+    }
+
+    console.log(event.key);
