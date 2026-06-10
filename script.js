@@ -8,8 +8,9 @@ const speed = 5;
 function moveBall(dx, dy) {
     x += dx;
     y += dy;
+    ball.style.left = x + 'px';
+    ball.style.top = y + 'px';
 }
-console.log('Ball position:', x, y);
 
 document.getElementById("up").addEventListener("click", () => {
     moveBall(0, -speed);
