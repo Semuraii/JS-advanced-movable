@@ -10,6 +10,11 @@ function moveBall(dx, dy) {
     y += dy;
     ball.style.left = x + 'px';
     ball.style.top = y + 'px';
+
+    if (x < 0) x = 0;
+    if (y < 0) y = 0;
+    if (x > container.clientWidth - ball.clientWidth) x = container.clientWidth - ball.clientWidth;
+    if (y > container.clientHeight - ball.clientHeight) y = container.clientHeight - ball.clientHeight;
 }
 
 document.getElementById("up").addEventListener("click", () => {
