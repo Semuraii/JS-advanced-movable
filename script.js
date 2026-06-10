@@ -9,4 +9,5 @@ function moveBall() {
     x += speed;
     y += speed;
 }
+console.log('Ball position:', x, y);
 
