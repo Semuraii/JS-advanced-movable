@@ -11,3 +11,19 @@ function moveBall() {
 }
 console.log('Ball position:', x, y);
 
+document.getElementById("up").addEventListener("click", () => {
+    moveBall(0, -speed);
+});
+
+document.getElementById("down").addEventListener("click", () => {
+    moveBall(0, speed);
+});
+
+document.getElementById("left").addEventListener("click", () => {
+    moveBall(-speed, 0);
+});
+
+document.getElementById("right").addEventListener("click", () => {
+    moveBall(speed, 0);
+});
+
