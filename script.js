@@ -32,4 +32,16 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowUp") {
         moveBall(0, -speed);
     }
+
+    if (event.key === "ArrowDown") {
+        moveBall(0, speed);
+    }
+
+    if (event.key === "ArrowLeft") {
+        moveBall(-speed, 0);
+    }
+
+    if (event.key === "ArrowRight") {
+        moveBall(speed, 0);
+    }
 });
