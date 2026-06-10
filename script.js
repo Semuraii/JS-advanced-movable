@@ -5,9 +5,9 @@ let x = 0;
 let y = 0;
 const speed = 5;
 
-function moveBall() {
-    x += speed;
-    y += speed;
+function moveBall(dx, dy) {
+    x += dx;
+    y += dy;
 }
 console.log('Ball position:', x, y);
 
